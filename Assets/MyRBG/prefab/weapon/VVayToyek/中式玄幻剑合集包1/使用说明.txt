@@ -1,0 +1,6 @@
+Asset Count: 4
+Tris: 896 + 5062 + 1189 + 1225
+Texture: 4
+
+加油，独立游戏人。
+——危途异客(VVayToyek)

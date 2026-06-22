@@ -1,0 +1,30 @@
+# Unity缓存（不用上传，Unity会自动重建）
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+MemoryCaptures/
+Packages/.cache/
+
+# VSIDE工程文件
+*.csproj
+*.sln
+*.userprefs
+*.suo
+*.tmp
+*.bak
+
+# 本地用户配置
+UserSettings/LocalUserSettings.asset
+
+# 打包成品
+*.exe
+*.apk
+*.ipa
+*.unitypackage
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
