@@ -12263,6 +12263,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 606886083}
     m_Modifications:
+    - target: {fileID: 806164608893677603, guid: 8307f0f87be8cbe40ac19f1da85e12d6, type: 3}
+      propertyPath: PlayerTransform
+      value: 
+      objectReference: {fileID: 756717818}
     - target: {fileID: 1271754308009810846, guid: 8307f0f87be8cbe40ac19f1da85e12d6, type: 3}
       propertyPath: m_Name
       value: "\u53D1\u5C04\u5668"
@@ -12536,6 +12540,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7417629049190829607, guid: fcc83819b573c0d489d6854940c36a1b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5866666021033867721}
+    - targetCorrespondingSourceObject: {fileID: 7417629049190829607, guid: fcc83819b573c0d489d6854940c36a1b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5866666021033867725}
   m_SourcePrefab: {fileID: 100100000, guid: fcc83819b573c0d489d6854940c36a1b, type: 3}
 --- !u!195 &5866666021033867721
 NavMeshAgent:
@@ -12559,6 +12566,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5866666021033867725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148959443208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b591182fbf9d9da4f9a41bcb59fe6e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restTime: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
