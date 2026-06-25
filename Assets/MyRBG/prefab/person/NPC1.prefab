@@ -780,7 +780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4247929341326176433}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.36572698, z: -0, w: 0.93072224}
+  m_LocalRotation: {x: 0, y: 0.36572975, z: 0, w: 0.9307211}
   m_LocalPosition: {x: 1.33, y: 0.5673833, z: -7.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -801,9 +801,9 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 0
-  m_Extents: {x: 0.48, y: 1.235, z: 0.48}
+  m_Extents: {x: 0.32, y: 1.235, z: 0.32}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.68, z: 0}
   m_TimeToStationary: 0.5
@@ -826,7 +826,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.72
+  m_Radius: 0.34
   m_Height: 1.9824047
   m_Direction: 1
   m_Center: {x: 0, y: 0.9818063, z: 0}
@@ -842,9 +842,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6887370e8bd52484b9ab497afae10ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  contentList: []
-  dialogUI: {fileID: 0}
+  name: Norant
+  contentList:
+  - Warrior!
+  - Are you ready for the adventure?
+  - You can explore here!
 --- !u!1 &4303561728884426314
 GameObject:
   m_ObjectHideFlags: 0

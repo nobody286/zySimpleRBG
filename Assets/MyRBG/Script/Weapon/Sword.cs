@@ -17,8 +17,10 @@ public class Sword : Weapon
     private float attackTimer;
     private void Start()
     {
+        PlayerTransform = GameObject.FindGameObjectWithTag(TagManager.PLAYER).transform;
         animator = PlayerTransform.GetComponent<Animator>();
         playerAgent = PlayerTransform.GetComponent<NavMeshAgent>();
+     
     }
     void Update()
     {
