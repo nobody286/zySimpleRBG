@@ -18,7 +18,9 @@ public class Javalin : Weapon
 
     private void Start()
     {
+        PlayerTransform = GameObject.FindGameObjectWithTag(TagManager.PLAYER).transform;
         animator = PlayerTransform.GetComponent<Animator>();
+
         // 不在 Start 时生成子弹，按下 E 时生成
     }
 
