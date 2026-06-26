@@ -113,30 +113,46 @@ public class EnemyMove : MonoBehaviour
             }
             int dropCount = 4;
             // 掉落若干物品，位置略微分散
-            for (int i = 0; i < dropCount; i++)
-            {
-                ItemScriptObject item = ItemDBManager.Instance.GetRandomItem();
-                if (item == null || item.prefab == null)
-                {
-                    continue;
-                }
-
-                // 在 XZ 平面上随机散布，附加一个小的高度偏移以防穿地
-                Vector2 offset = Random.insideUnitCircle * dropRadius;
-                Vector3 spawnPos = transform.position + new Vector3(offset.x, spawnHeightOffset, offset.y);
-
-                // 随机旋转，使掉落物朝向不一致
-                GameObject go =  GameObject.Instantiate(item.prefab, spawnPos, Random.rotation);
-                go.tag = TagManager.INTERACTABLE;
-                pickableObject po =  go.AddComponent<pickableObject>();
-                po.itemSO = item;
-            }
+           SpwanPickableItem(dropCount);
 
             Destroy(this.gameObject);
         }
     }
+    public void SpwanPickableItem(int dropcount)
+    {
+        for (int i = 0; i < dropcount; i++)
+        {
+            ItemScriptObject item = ItemDBManager.Instance.GetRandomItem();
+            if (item == null || item.prefab == null)
+            {
+                continue;
+            }
 
+            // 在 XZ 平面上随机散布，附加一个小的高度偏移以防穿地
+            Vector2 offset = Random.insideUnitCircle * dropRadius;
+            Vector3 spawnPos = transform.position + new Vector3(offset.x, spawnHeightOffset, offset.y);
 
+            // 随机旋转，使掉落物朝向不一致
+            GameObject go = GameObject.Instantiate(item.prefab, spawnPos, Random.rotation);
+            go.tag = TagManager.INTERACTABLE;
+            pickableObject po = go.AddComponent<pickableObject>();
+            po.itemSO = item;
+
+            Collider collider = go.GetComponent<Collider>();
+            if(collider != null)
+            {
+                collider.enabled = true;
+                collider.isTrigger = false;
+            }
+            Rigidbody rgd = go.GetComponent<Rigidbody>();
+            if(rgd != null)
+            {
+                rgd.isKinematic = false;
+                rgd.useGravity = true;
+            }
+        }
+    }
+    
     void OnFootstep()
     {
 

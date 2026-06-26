@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 1024
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 128
+  controlID: 126
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -248,8 +248,8 @@ MonoBehaviour:
     y: 0
     width: 375.99994
     height: 475.33334
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -300,8 +300,8 @@ MonoBehaviour:
     y: 0
     width: 384
     height: 974
-  m_MinSize: {x: 275, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 5.9866323, y: 0.3411844, z: -5.0733004}
     speed: 2
-    m_Value: {x: 5.9866323, y: 0.34118438, z: -5.0733004}
+    m_Value: {x: 5.9866323, y: 0.3411844, z: -5.0733004}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.1334053, y: 0.84529793, z: -0.24107757, w: 0.4602301}
     speed: 2
-    m_Value: {x: 0.13349582, y: 0.84388596, z: -0.24067275, w: 0.46055603}
+    m_Value: {x: 0.1332551, y: 0.84434617, z: -0.24080612, w: 0.4597119}
   m_Size:
     m_Target: 3.4472346
     speed: 2
@@ -1050,9 +1050,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 00480000
       m_LastClickedID: 0
-      m_ExpandedIDs: 1af9ffff72860000
+      m_ExpandedIDs: 46f8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1121,7 +1121,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MyRBG/prefab/consumables
+    - "Assets/MyRBG/prefab/weapon/\u6843\u6728\u5251"
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1137,7 +1137,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 1a780000
     m_LastClickedID: 30746
-    m_ExpandedIDs: 00000000fe90000000910000029100000491000006910000089100000a9100000c9100000e91000010910000129100001491000016910000189100001a9100001c9100001e91000020910000229100002491000026910000289100002a9100002c9100002e91000030910000329100003491000036910000389100003a9100003c9100003e91000040910000
+    m_ExpandedIDs: 00000000b4460000b84600006e91000070910000729100007491000076910000789100007a9100007c9100007e91000080910000829100008491000086910000889100008a9100008c9100008e91000090910000929100009491000096910000989100009a9100009c9100009e910000a0910000a2910000a4910000a6910000a8910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1162,10 +1162,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 120}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000000910000029100000491000006910000089100000a9100000c9100000e910000109100001291000016910000189100001a9100001c9100001e910000209100002291000024910000289100002a9100002c9100002e91000030910000329100003491000036910000389100003a9100003c9100003e91000040910000c2910000
+    m_ExpandedIDs: ffffffff00000000b4460000b84600006e91000070910000729100007491000076910000789100007a9100007c9100007e91000080910000829100008491000086910000889100008a9100008c9100008e91000090910000929100009491000096910000989100009a9100009c9100009e910000a0910000a2910000a4910000a6910000a8910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1262,7 +1262,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 324
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
