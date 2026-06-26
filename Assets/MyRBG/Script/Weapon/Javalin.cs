@@ -82,6 +82,7 @@ public class Javalin : Weapon
 
     private void SpawnBullet()
     {
+
         // 生成并作为武器的子对象，等待动画结束再发射
         bulletGo = GameObject.Instantiate(bulletPrefab, transform.position, transform.rotation);
         bulletGo.transform.parent = transform;
@@ -92,6 +93,7 @@ public class Javalin : Weapon
             rb.velocity = Vector3.zero;
             rb.isKinematic = false; // 保持可物理驱动（发射时使用 velocity）
         }
+
     }
 }
 

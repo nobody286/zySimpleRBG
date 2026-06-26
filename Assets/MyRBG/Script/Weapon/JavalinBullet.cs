@@ -15,8 +15,9 @@ public class JavalinBullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag == TagManager.PLAYER)
+        if(collision.collider.tag == TagManager.PLAYER || this.tag == TagManager.INTERACTABLE)
         {
+            Debug.Log("collider.tag is player or this.tag is interactable");
             return;
         }
         rgd.velocity = Vector3.zero;

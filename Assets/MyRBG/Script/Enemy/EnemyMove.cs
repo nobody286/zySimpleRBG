@@ -30,6 +30,12 @@ public class EnemyMove : MonoBehaviour
     [Tooltip("静止或默认的角速度（会在 Start 时自动读取并恢复）")]
     public float defaultAngularSpeed = 120f;
 
+    [Header("掉落设置")]
+    [Tooltip("掉落物相对于敌人位置的最大散布半径（XZ 平面）")]
+    public float dropRadius = 0.8f;
+    [Tooltip("生成点相对于地面的竖直偏移，防止穿地")]
+    public float spawnHeightOffset = 0.5f;
+
     void Start()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
@@ -97,18 +103,38 @@ public class EnemyMove : MonoBehaviour
     public void TakeDamage(int damage)
     {
         HP -= damage;
-        if(HP <= 0)
+        if (HP <= 0)
         {
-            GetComponent<Collider>().enabled = false;
-            int count = 4;   //掉落物个数
-            for(int i = 0; i < count; i++)
+            // 禁用敌人的碰撞体，避免掉落和敌人发生干扰
+            var col = GetComponent<Collider>();
+            if (col != null)
             {
-                ItemScriptObject item =  ItemDBManager.Instance.GetRandomItem();
-                GameObject.Instantiate(item.prefab , transform.position , Quaternion.identity);
+                col.enabled = false;
             }
+            int dropCount = 4;
+            // 掉落若干物品，位置略微分散
+            for (int i = 0; i < dropCount; i++)
+            {
+                ItemScriptObject item = ItemDBManager.Instance.GetRandomItem();
+                if (item == null || item.prefab == null)
+                {
+                    continue;
+                }
+
+                // 在 XZ 平面上随机散布，附加一个小的高度偏移以防穿地
+                Vector2 offset = Random.insideUnitCircle * dropRadius;
+                Vector3 spawnPos = transform.position + new Vector3(offset.x, spawnHeightOffset, offset.y);
+
+                // 随机旋转，使掉落物朝向不一致
+                GameObject go =  GameObject.Instantiate(item.prefab, spawnPos, Random.rotation);
+                go.tag = TagManager.INTERACTABLE;
+
+            }
+
             Destroy(this.gameObject);
         }
     }
+
 
     void OnFootstep()
     {
