@@ -128,7 +128,8 @@ public class EnemyMove : MonoBehaviour
                 // 随机旋转，使掉落物朝向不一致
                 GameObject go =  GameObject.Instantiate(item.prefab, spawnPos, Random.rotation);
                 go.tag = TagManager.INTERACTABLE;
-
+                pickableObject po =  go.AddComponent<pickableObject>();
+                po.itemSO = item;
             }
 
             Destroy(this.gameObject);
