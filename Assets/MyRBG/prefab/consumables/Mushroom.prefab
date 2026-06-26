@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5991411072062694563}
   - component: {fileID: 5069209443259973671}
   - component: {fileID: 4439815434492380285}
-  - component: {fileID: 5479849288977741558}
+  - component: {fileID: -9050201497623958702}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Untagged
@@ -132,9 +132,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.22524741, y: 0.3406743, z: 0.22224516}
-  m_Center: {x: 0.0072555207, y: 0.1702209, z: 0.0030555539}
---- !u!114 &5479849288977741558
+  m_Size: {x: 1.2022532, y: 0.7063691, z: 1.0358483}
+  m_Center: {x: 0.1770671, y: 0.35306832, z: 0.046532452}
+--- !u!114 &-9050201497623958702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6126206399491605490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78466a41d1d08942be63cba95ea9c5b, type: 3}
+  m_Script: {fileID: 11500000, guid: ccf959808e867174298cc2dad09d7909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSO: {fileID: 11400000, guid: 998670e6a13a4e94f869a70b4d5b98db, type: 2}
