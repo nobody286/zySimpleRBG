@@ -7,6 +7,7 @@ public class pickableObject : InteractableObject
     public ItemScriptObject itemSO;
     protected override void Interact()
     {
-        print("pick up the object");
+        Destroy(this.gameObject);
+        InventoryManager.Instance.Additem(itemSO);
     }
 }
