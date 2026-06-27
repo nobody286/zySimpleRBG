@@ -26,7 +26,7 @@ public class DialogUI : MonoBehaviour
     }
     private void Start()
     {
-        uiGameObject = transform.Find("UI").gameObject;
+        uiGameObject = transform.Find("diaUI").gameObject;
         Hide();
         continueButton.onClick.AddListener(this.OnContinueButtonOnClick);
     }
