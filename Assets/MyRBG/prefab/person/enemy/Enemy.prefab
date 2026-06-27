@@ -1808,7 +1808,7 @@ GameObject:
   - component: {fileID: 4996468458479567055}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1908,9 +1908,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b591182fbf9d9da4f9a41bcb59fe6e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 100
   restTime: 2
   moveAngularSpeed: 360
   defaultAngularSpeed: 120
+  dropRadius: 0.8
+  spawnHeightOffset: 0.5
 --- !u!1 &7443278562455454115
 GameObject:
   m_ObjectHideFlags: 0
