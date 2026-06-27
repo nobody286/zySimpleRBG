@@ -96,8 +96,8 @@ public class EnemyMove : MonoBehaviour
     }
     Vector3 FindRandomPosition()
     {
-        Vector3 randomDir = new Vector3(Random.Range(-1, 1f), 0, Random.Range(-1, -1f));
-        return transform.position + randomDir.normalized * Random.Range(3, 5);
+        Vector3 randomDir = new Vector3(Random.Range(-1, 1f), 0, Random.Range(-1, 1f));
+        return transform.position + randomDir.normalized * Random.Range(2, 4);
     }
     public void TakeDamage(int damage)
     {
