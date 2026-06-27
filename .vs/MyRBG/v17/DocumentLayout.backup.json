@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\unity_project\\MyRBG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|d:\\unity_project\\myrbg\\assets\\myrbg\\script\\weapon\\javalin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\weapon\\javalin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|d:\\unity_project\\myrbg\\assets\\myrbg\\script\\weapon\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\weapon\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\enemy\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\enemy\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\otherobject\\pickableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\otherobject\\pickableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\weapon\\javalin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\weapon\\javalin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\weapon\\javalinbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\weapon\\javalinbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\player\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\player\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\enemy\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\enemy\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\otherobject\\pickableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\otherobject\\pickableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\player\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\player\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\player\\playerpick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,14 +55,6 @@
       "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\weapon\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\weapon\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\weapon\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\gamemanager\\so\\itemdbso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\gamemanager\\so\\itemdbso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "TagManager.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\GameManager\\TagManager.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\GameManager\\TagManager.cs",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PlayerPick.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Player\\PlayerPick.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Player\\PlayerPick.cs",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "InventoryManager.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\GameManager\\InventoryManager.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\GameManager\\InventoryManager.cs",
@@ -122,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "pickableObject.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\otherObject\\pickableObject.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\otherObject\\pickableObject.cs",
@@ -130,11 +130,12 @@
               "RelativeToolTip": "Assets\\MyRBG\\Script\\otherObject\\pickableObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T05:07:47.278Z"
+              "WhenOpened": "2026-06-26T05:07:47.278Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "InteractableObject.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Class\\InteractableObject.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Class\\InteractableObject.cs",
@@ -146,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Weapon.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Weapon\\Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Weapon\\Weapon.cs",
@@ -182,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "EnemyMove.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Enemy\\EnemyMove.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Enemy\\EnemyMove.cs",
@@ -190,21 +191,19 @@
               "RelativeToolTip": "Assets\\MyRBG\\Script\\Enemy\\EnemyMove.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAywFMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T14:11:34.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T14:11:34.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Javalin.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Weapon\\Javalin.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Weapon\\Javalin.cs",
               "ToolTip": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Weapon\\Javalin.cs",
               "RelativeToolTip": "Assets\\MyRBG\\Script\\Weapon\\Javalin.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAABOwGsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T03:21:43.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-21T03:21:43.557Z"
             },
             {
               "$type": "Document",
@@ -220,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "NPCObject.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\NPC\\NPCObject.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\NPC\\NPCObject.cs",
@@ -232,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "JavalinBullet.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Weapon\\JavalinBullet.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Weapon\\JavalinBullet.cs",
@@ -240,36 +239,36 @@
               "RelativeToolTip": "Assets\\MyRBG\\Script\\Weapon\\JavalinBullet.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T05:02:12.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-21T05:02:12.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Player\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Player\\PlayerAttack.cs",
               "ToolTip": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Player\\PlayerAttack.cs",
               "RelativeToolTip": "Assets\\MyRBG\\Script\\Player\\PlayerAttack.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-20T12:18:06.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "Sword.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Weapon\\Sword.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Weapon\\Sword.cs",
               "ToolTip": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Weapon\\Sword.cs",
               "RelativeToolTip": "Assets\\MyRBG\\Script\\Weapon\\Sword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T12:15:30.731Z"
+              "WhenOpened": "2026-06-20T12:15:30.731Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PlayerMove.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Player\\PlayerMove.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Player\\PlayerMove.cs",
@@ -277,8 +276,7 @@
               "RelativeToolTip": "Assets\\MyRBG\\Script\\Player\\PlayerMove.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAkwCQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T12:13:07.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T12:13:07.653Z"
             }
           ]
         }
