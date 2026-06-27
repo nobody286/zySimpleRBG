@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.RenderGraphModule;
 
 public class JavalinBullet : MonoBehaviour
 {
+    public int atkValue = 30;
     private Rigidbody rgd;
     private Collider col;
     private void Start()
@@ -15,15 +17,32 @@ public class JavalinBullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag == TagManager.PLAYER || this.tag == TagManager.INTERACTABLE)
+        if (collision.collider.tag == TagManager.PLAYER || this.tag == TagManager.INTERACTABLE)
         {
-            Debug.Log("collider.tag is player or this.tag is interactable");
-            rgd.useGravity = true;
             return;
         }
-        rgd.velocity = Vector3.zero;
-        rgd.isKinematic = true;
-        col.enabled = false;
+
+        if (rgd != null)
+        {
+            rgd.velocity = Vector3.zero;
+            rgd.isKinematic = true;
+        }
+
+        if (col != null)
+        {
+            col.enabled = false;
+        }
+
+        transform.parent = collision.gameObject.transform;
         Destroy(this.gameObject, 2f);
+
+        if (collision.gameObject.tag == TagManager.ENEMY)
+        {
+            var em = collision.gameObject.GetComponent<EnemyMove>();
+            if (em != null)
+            {
+                em.TakeDamage(atkValue);
+            }
+        }
     }
 }

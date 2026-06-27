@@ -88,12 +88,11 @@ public class EnemyMove : MonoBehaviour
             }
         }
 
-
+        //测试代码
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(100);
         }
-
     }
     Vector3 FindRandomPosition()
     {
@@ -111,7 +110,7 @@ public class EnemyMove : MonoBehaviour
             {
                 col.enabled = false;
             }
-            int dropCount = 4;
+            int dropCount = Random.Range(1, 4);
             // 掉落若干物品，位置略微分散
            SpwanPickableItem(dropCount);
 
