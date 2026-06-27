@@ -12,10 +12,9 @@ public class Javalin : Weapon
     private Animator animator;
 
     [Header("攻击设置")]
-    private float attackAnimLength = 1.5f;
+    public float attackAnimLength = 1.2f;
     private bool isAttacking = false;
     private float attackTimer;
-
     private void Start()
     {
         PlayerTransform = GameObject.FindGameObjectWithTag(TagManager.PLAYER).transform;
@@ -27,6 +26,7 @@ public class Javalin : Weapon
     void Update()
     {
         Attack();
+
     }
 
     public override void Attack()
@@ -39,20 +39,29 @@ public class Javalin : Weapon
             {
                 isAttacking = false;
                 animator.SetBool("isShooting", false);
+                animator.SetBool("isWalking", true);
 
                 // 动画播放完毕后发射子弹（如果存在）
                 if (bulletGo != null)
                 {
-                    // 先解除父子关系，然后让子弹移动
+                    // 在解除父子关系前记录发射方向（使用局部 Y 轴转换到世界空间）
+                    Vector3 fireDirection = bulletGo.transform.TransformDirection(Vector3.up);
+
+                    // 解除父子关系，保持世界坐标不变
                     if (bulletGo.transform.parent != null)
                     {
-                        bulletGo.transform.parent = null;
+                        bulletGo.transform.SetParent(null, true);
                     }
 
                     var rb = bulletGo.GetComponent<Rigidbody>();
                     if (rb != null)
                     {
-                        rb.velocity = bulletGo.transform.up * bulletSpeed;
+                        // 清除所有约束（避免使用 ~ 操作符）
+                        rb.constraints = RigidbodyConstraints.None;
+
+                        // 切换为物理驱动，然后以方向速度发射
+                        rb.isKinematic = false;
+                        rb.velocity = fireDirection * bulletSpeed;
                     }
 
                     bulletGo = null;
@@ -76,6 +85,7 @@ public class Javalin : Weapon
 
             isAttacking = true;
             attackTimer = attackAnimLength;
+            animator.SetBool("isWalking", false);
             animator.SetBool("isShooting", true);
         }
     }
@@ -86,14 +96,19 @@ public class Javalin : Weapon
         // 生成并作为武器的子对象，等待动画结束再发射
         bulletGo = GameObject.Instantiate(bulletPrefab, transform.position, transform.rotation);
         bulletGo.transform.parent = transform;
-        // 确保刚体在生成时不会受其他力影响（可选，根据预制体设置）
+        // 确保刚体在生成时不会受其他力影响：挂在手上时应为 kinematic
         var rb = bulletGo.GetComponent<Rigidbody>();
         if (rb != null)
         {
             rb.velocity = Vector3.zero;
-            rb.isKinematic = false; // 保持可物理驱动（发射时使用 velocity）
+            rb.isKinematic = true; // 挂在手上时禁用物理模拟，发射时再置为 false
         }
-
+        if (bulletGo != null)
+        {
+            Destroy(bulletGo, 10f);
+        }
+        // 可根据需要重置局部旋转，使子弹局部 Y 轴与武器对齐（如果 prefab 非标准朝向）
+        // bulletGo.transform.localRotation = Quaternion.identity;
     }
 }
 
