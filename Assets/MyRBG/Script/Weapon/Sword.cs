@@ -33,6 +33,10 @@ public class Sword : Weapon
     void Update()
     {
         Attack();
+        if(this.tag == TagManager.INTERACTABLE)
+        {
+            col.enabled = true;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {

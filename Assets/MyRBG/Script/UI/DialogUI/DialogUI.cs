@@ -13,6 +13,8 @@ public class DialogUI : MonoBehaviour
     public Button continueButton;
     private List<string> contentList;
     private int contentIndex = 0;
+
+    private GameObject uiGameObject;
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -24,12 +26,13 @@ public class DialogUI : MonoBehaviour
     }
     private void Start()
     {
+        uiGameObject = transform.Find("UI").gameObject;
         Hide();
         continueButton.onClick.AddListener(this.OnContinueButtonOnClick);
     }
     public void Show()
     {
-        gameObject.SetActive(true);
+        uiGameObject.SetActive(true);
     }
     public void Show(string name, string[] content)
     {
@@ -39,11 +42,11 @@ public class DialogUI : MonoBehaviour
         contentList.AddRange(content);
         contentIndex = 0;
         contentText.text = contentList[0];
-        gameObject.SetActive(true);
+        uiGameObject.SetActive(true);
     }
     public void Hide()
     {
-        gameObject.SetActive(false);
+        uiGameObject.SetActive(false);
     }
     private void OnContinueButtonOnClick()
     {
