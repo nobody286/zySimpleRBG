@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "D:\\unity_project\\MyRBG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\gamemanager\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\gamemanager\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|d:\\unity_project\\myrbg\\assets\\myrbg\\font\\zhuote\\characterfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\font\\zhuote\\characterfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\player\\playerpick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\player\\playerpick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\ui\\inventoryui\\itemdetailui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\ui\\inventoryui\\itemdetailui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\ui\\inventoryui\\itemui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\ui\\inventoryui\\itemui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\ui\\inventoryui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\ui\\inventoryui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|d:\\unity_project\\myrbg\\assets\\myrbg\\font\\zhuote\\characterfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\font\\zhuote\\characterfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\gamemanager\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\gamemanager\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\ui\\inventoryui\\itemui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\ui\\inventoryui\\itemui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|D:\\unity_project\\MyRBG\\assets\\myrbg\\script\\player\\playerpick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC45FBA1-A265-EC7F-76C5-D12FC78CCEE4}|Assembly-CSharp.csproj|solutionrelative:assets\\myrbg\\script\\player\\playerpick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,45 +46,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "ItemDetailUI.cs",
+              "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\UI\\InventoryUI\\ItemDetailUI.cs",
+              "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\UI\\InventoryUI\\ItemDetailUI.cs",
+              "ToolTip": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\UI\\InventoryUI\\ItemDetailUI.cs",
+              "RelativeToolTip": "Assets\\MyRBG\\Script\\UI\\InventoryUI\\ItemDetailUI.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwCcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T07:50:40.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "characterFile.txt",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Font\\zhuote\\characterFile.txt",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Font\\zhuote\\characterFile.txt",
               "ToolTip": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Font\\zhuote\\characterFile.txt",
               "RelativeToolTip": "Assets\\MyRBG\\Font\\zhuote\\characterFile.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-06-28T07:11:41.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "itemUI.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\UI\\InventoryUI\\itemUI.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\UI\\InventoryUI\\itemUI.cs",
               "ToolTip": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\UI\\InventoryUI\\itemUI.cs",
               "RelativeToolTip": "Assets\\MyRBG\\Script\\UI\\InventoryUI\\itemUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-28T06:23:06.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "InventoryUI.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\UI\\InventoryUI\\InventoryUI.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\UI\\InventoryUI\\InventoryUI.cs",
               "ToolTip": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\UI\\InventoryUI\\InventoryUI.cs",
               "RelativeToolTip": "Assets\\MyRBG\\Script\\UI\\InventoryUI\\InventoryUI.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAcwDsAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwDoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T06:14:12.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-28T06:14:12.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "InventoryManager.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\GameManager\\InventoryManager.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\GameManager\\InventoryManager.cs",
@@ -88,12 +103,11 @@
               "RelativeToolTip": "Assets\\MyRBG\\Script\\GameManager\\InventoryManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T05:19:28.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T05:19:28.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "PlayerPick.cs",
               "DocumentMoniker": "D:\\unity_project\\MyRBG\\Assets\\MyRBG\\Script\\Player\\PlayerPick.cs",
               "RelativeDocumentMoniker": "Assets\\MyRBG\\Script\\Player\\PlayerPick.cs",
@@ -101,8 +115,7 @@
               "RelativeToolTip": "Assets\\MyRBG\\Script\\Player\\PlayerPick.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T05:23:18.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T05:23:18.995Z"
             }
           ]
         }
