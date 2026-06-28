@@ -3986,8 +3986,9 @@ GameObject:
   - component: {fileID: 384153760}
   - component: {fileID: 384153762}
   - component: {fileID: 384153761}
+  - component: {fileID: 384153763}
   m_Layer: 5
-  m_Name: DetailImage
+  m_Name: ItemDetailUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4056,6 +4057,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384153759}
   m_CullTransparentMesh: 1
+--- !u!114 &384153763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384153759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d1f141192a4154184c8b778a109c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconImage: {fileID: 2125746622}
+  nameText: {fileID: 340538916}
+  typeText: {fileID: 180004662}
+  descriptionText: {fileID: 1220808620}
+  propertyGrid: {fileID: 623503216}
+  propertyTemplate: {fileID: 1474895913}
 --- !u!1001 &411582589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9617,8 +9636,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 10
@@ -9653,7 +9672,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0.000030517578}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11664,7 +11683,7 @@ GameObject:
   - component: {fileID: 1474895916}
   - component: {fileID: 1474895915}
   m_Layer: 5
-  m_Name: Image
+  m_Name: PropertyTemplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12785,7 +12804,7 @@ GameObject:
   - component: {fileID: 1687475470}
   - component: {fileID: 1687475469}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Property
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13551,6 +13570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 1607489764712601233, guid: 6f834a2cf8da759429a75834887cc1de, type: 3}
+  itemDetailUI: {fileID: 384153763}
 --- !u!1001 &1782073264
 PrefabInstance:
   m_ObjectHideFlags: 0
