@@ -58,8 +58,15 @@ public class InventoryUI : MonoBehaviour
 
         itemUI.InitItem(itemSO);
     }
-    public void OnItemClick(ItemScriptObject itemSO)
+    public void OnItemClick(ItemScriptObject itemSO , itemUI itemUI)
     {
-        itemDetailUI.UpdateItemDetailUI(itemSO);
+        itemDetailUI.UpdateItemDetailUI(itemSO , itemUI);
+    }
+    public void OnItemUse(ItemScriptObject itemSO , itemUI itemUI)
+    {
+        Destroy(itemUI.gameObject);
+        InventoryManager.Instance.RemoveItem(itemSO);
+
+        GameObject.FindGameObjectWithTag(TagManager.PLAYER).GetComponent<Player>().UseItem(itemSO);
     }
 }

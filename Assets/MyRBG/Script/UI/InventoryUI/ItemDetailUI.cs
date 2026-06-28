@@ -12,12 +12,19 @@ public class ItemDetailUI : MonoBehaviour
     public TextMeshProUGUI descriptionText;
     public GameObject propertyGrid;
     public GameObject propertyTemplate;
+
+    private ItemScriptObject itemSO;
+    private itemUI itemUI;
     private void Start()
     {
         propertyTemplate.SetActive(false);
+        this.gameObject.SetActive(false);
     }
-    public void UpdateItemDetailUI(ItemScriptObject itemSO)
+    public void UpdateItemDetailUI(ItemScriptObject itemSO , itemUI itemUI)
     {
+        this.itemSO = itemSO;
+        this.itemUI = itemUI;
+        this.gameObject.SetActive(true);
         string type = "";
         switch (itemSO.itemType)
         {
@@ -70,5 +77,12 @@ public class ItemDetailUI : MonoBehaviour
             go.transform.parent = propertyGrid.transform;
             go.transform.Find("Property").GetComponent<TextMeshProUGUI>().text = propertyStr;
         }                   
+
+    }
+
+    public void OnUseButtonClick()
+    {
+        InventoryUI.Instance.OnItemUse(itemSO, itemUI);
+        this.gameObject.SetActive(false);
     }
 }
