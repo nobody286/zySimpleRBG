@@ -13,7 +13,7 @@ public class PlayerPick : MonoBehaviour
             pickableObject po = collision.gameObject.GetComponent<pickableObject>();
             if(po != null)
             {
-                Debug.Log("the second id right too");
+
                     InventoryManager.Instance.Additem(po.itemSO);
                     Destroy(po.gameObject);
             }
