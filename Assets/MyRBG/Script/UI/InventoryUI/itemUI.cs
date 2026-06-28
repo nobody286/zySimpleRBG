@@ -29,6 +29,6 @@ public class itemUI : MonoBehaviour
     }
     public void OnClick()
     {
-        InventoryUI.Instance.OnItemClick(itemSO);
+        InventoryUI.Instance.OnItemClick(itemSO , this);
     }
 }

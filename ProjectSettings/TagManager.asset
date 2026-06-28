@@ -9,6 +9,8 @@ TagManager:
   - CinemachineTarget
   - Enemy
   - Weapon
+  - p1
+  - p2
   layers:
   - Default
   - TransparentFX

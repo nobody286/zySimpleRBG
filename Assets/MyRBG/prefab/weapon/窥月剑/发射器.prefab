@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1271754308009810846
+--- !u!1 &8177002425109045176
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8402144063796282580}
-  - component: {fileID: 806164608893677603}
+  - component: {fileID: 9036775644643615068}
+  - component: {fileID: 4638390980502891433}
   m_Layer: 0
   m_Name: "\u53D1\u5C04\u5668"
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8402144063796282580
+--- !u!4 &9036775644643615068
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271754308009810846}
+  m_GameObject: {fileID: 8177002425109045176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,20 +32,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &806164608893677603
+--- !u!114 &4638390980502891433
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271754308009810846}
+  m_GameObject: {fileID: 8177002425109045176}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c1d148b9e0a69949adf5036108ce98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackValue: 30
-  bulletSpeed: 15
+  attackValue: 0
+  bulletSpeed: 5
   bulletPrefab: {fileID: 4910504593637163230, guid: 694f487203d9c364d95dbb3207db1faa, type: 3}
   PlayerTransform: {fileID: 0}
-  attackAnimLength: 1
+  attackAnimLength: 1.2

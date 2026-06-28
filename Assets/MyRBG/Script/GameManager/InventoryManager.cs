@@ -15,9 +15,19 @@ public class InventoryManager : MonoBehaviour
         Instance = this;
     }
     public List<ItemScriptObject> itemList;
+    public ItemScriptObject defultWeapon;
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(1);
+        Additem(defultWeapon);
+    }
     public void Additem(ItemScriptObject item)
     {
         itemList.Add(item);
         InventoryUI.Instance.AddItem(item);
+    }
+    public void RemoveItem(ItemScriptObject itemSO)
+    {
+        itemList.Remove(itemSO);
     }
 }
