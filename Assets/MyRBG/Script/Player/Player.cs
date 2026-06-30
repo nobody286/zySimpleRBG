@@ -5,9 +5,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private PlayerAttack playerAttack;
+    private PlayerProperty playerProperty;
     private void Start()
     {
         playerAttack = GetComponent<PlayerAttack>();
+        playerProperty = GetComponent<PlayerProperty>();
     }
     public void UseItem(ItemScriptObject itemSO)
     {
@@ -17,6 +19,7 @@ public class Player : MonoBehaviour
                 playerAttack.LoadWeapon(itemSO);
                 break;
             case ItemType.Consumable:
+                playerProperty.UseDrug(itemSO);
                 break;
             default:
                 break;

@@ -47,25 +47,25 @@ public class ItemDetailUI : MonoBehaviour
                 Destroy(child.gameObject);
             }
         }
-        foreach (ItemProperty property in itemSO.propertyList)
+        foreach (Property property in itemSO.propertyList)
         {
             string propertyStr = "";
             string propertyName = "";
             switch (property.propertyType)
             {
-                case ItemPropertyType.HPValue:
+                case PropertyType.HPValue:
                     propertyName = "生命值:";
                     break;
-                case ItemPropertyType.EnergyValue:
+                case PropertyType.EnergyValue:
                     propertyName = "饥饿值:";
                     break;
-                case ItemPropertyType.MentalValue:
+                case PropertyType.MentalValue:
                     propertyName = "精神值:";
                     break;
-                case ItemPropertyType.SpeedValue:
+                case PropertyType.SpeedValue:
                     propertyName = "速度:";
                     break;
-                case ItemPropertyType.AttackValue:
+                case PropertyType.AttackValue:
                     propertyName = "攻击力:";
                     break;
 

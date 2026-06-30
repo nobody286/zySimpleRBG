@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using JetBrains.Annotations;
 
 [CreateAssetMenu()]
 public class ItemScriptObject : ScriptableObject
@@ -10,7 +11,7 @@ public class ItemScriptObject : ScriptableObject
     public string name;
     public ItemType itemType;
     public string description;
-    public List<ItemProperty> propertyList;
+    public List<Property> propertyList;
     public Sprite icon;
     public GameObject prefab;
 
@@ -21,12 +22,20 @@ public enum ItemType
     Consumable
 }
 [Serializable]
-public class ItemProperty
+public class Property
 {
-    public ItemPropertyType propertyType;
+    public PropertyType propertyType;
     public int value;
+    public Property()
+    {
+
+    }
+    public Property(PropertyType propertyType , int value)
+    {
+
+    }
 }
-public enum ItemPropertyType
+public enum PropertyType
 {
     HPValue,
     EnergyValue,
