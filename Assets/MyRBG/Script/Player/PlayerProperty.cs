@@ -8,18 +8,19 @@ public class PlayerProperty : MonoBehaviour
     public int hpValue = 100;
     public int energyValue = 100;
     public int mentalValue = 100;
+    public int level = 1;
+    public int currentExp = 0;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         propertyDict = new Dictionary<PropertyType, List<Property>>();
-        propertyDict.Add(PropertyType.HPValue , new List<Property>());
-        propertyDict.Add(PropertyType.EnergyValue, new List<Property>());
         propertyDict.Add(PropertyType.AttackValue, new List<Property>());
-        propertyDict.Add(PropertyType.MentalValue, new List<Property>());
         propertyDict.Add(PropertyType.SpeedValue, new List<Property>());
 
         AddProperty(PropertyType.SpeedValue, 5);
         AddProperty(PropertyType.AttackValue, 20);
+
+        EventCenter.OnEnemyDied += OnEnemyDied;
     }
     public void UseDrug(ItemScriptObject itemSO)
     {
@@ -67,5 +68,19 @@ public class PlayerProperty : MonoBehaviour
         List<Property> list;
         propertyDict.TryGetValue(pt, out list);
         list.Remove(list.Find(x => x.value == value));
+    }
+    private void OnDestroy()
+    {
+        EventCenter.OnEnemyDied -= OnEnemyDied;
+    }
+    private void OnEnemyDied(EnemyMove enemy)
+    {
+        this.currentExp += enemy.exp;
+        if(currentExp >= level * 30)
+        {
+            currentExp -= level * 30;
+            level++;
+        }
+        PlayerPropertyUI.Instance.UpdatePlayerPropertyUI();
     }
 }

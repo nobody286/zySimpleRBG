@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class PlayerAttack : MonoBehaviour
 {
     public Weapon weapon; //当前装备的武器
+    public Sprite weaponIcon;
     void Start()
     {
         
@@ -47,6 +48,8 @@ public class PlayerAttack : MonoBehaviour
         weaponGo.transform.localPosition = Vector3.zero;
         weaponGo.transform.localRotation = Quaternion.identity;
         this.weapon = weaponGo.GetComponent<Weapon>();
+        this.weaponIcon = itemSO.icon;
+        
     }
     public void UnloadWeapon()
     {
