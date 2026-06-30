@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class EnemyMove : MonoBehaviour
 {
     public int HP = 100;
-
+    public int exp = 20;
     Animator animator;
     public enum EnemyState
     {
@@ -104,18 +104,23 @@ public class EnemyMove : MonoBehaviour
         HP -= damage;
         if (HP <= 0)
         {
-            // 禁用敌人的碰撞体，避免掉落和敌人发生干扰
-            var col = GetComponent<Collider>();
-            if (col != null)
-            {
-                col.enabled = false;
-            }
-            int dropCount = Random.Range(1, 4);
-            // 掉落若干物品，位置略微分散
-           SpwanPickableItem(dropCount);
-
-            Destroy(this.gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        // 禁用敌人的碰撞体，避免掉落和敌人发生干扰
+        var col = GetComponent<Collider>();
+        if (col != null)
+        {
+            col.enabled = false;
+        }
+        int dropCount = Random.Range(1, 4);
+        // 掉落若干物品，位置略微分散
+        SpwanPickableItem(dropCount);
+        EventCenter.EnemyDied(this);
+        Destroy(this.gameObject);
     }
     public void SpwanPickableItem(int dropcount)
     {
