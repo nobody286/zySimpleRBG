@@ -39,6 +39,7 @@ public class PlayerMove : MonoBehaviour
                 else if(hit.collider.tag == "Interactable")
                 {
                     hit.collider.GetComponent<InteractableObject>().OnClick(playerAgent);
+
                 }
             }
         }
