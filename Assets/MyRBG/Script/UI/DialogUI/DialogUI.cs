@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Security;
 using TMPro;
@@ -15,6 +16,8 @@ public class DialogUI : MonoBehaviour
     private int contentIndex = 0;
 
     private GameObject uiGameObject;
+
+    private Action OnDialogueEnd;
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -34,7 +37,7 @@ public class DialogUI : MonoBehaviour
     {
         uiGameObject.SetActive(true);
     }
-    public void Show(string name, string[] content)
+    public void Show(string name, string[] content , Action OnDialogueEnd = null)
     {
 
         nameText.text = name;
@@ -43,6 +46,7 @@ public class DialogUI : MonoBehaviour
         contentIndex = 0;
         contentText.text = contentList[0];
         uiGameObject.SetActive(true);
+        this.OnDialogueEnd = OnDialogueEnd;
     }
     public void Hide()
     {
@@ -53,6 +57,7 @@ public class DialogUI : MonoBehaviour
         contentIndex++;
         if (contentIndex >= contentList.Count)
         {
+            OnDialogueEnd?.Invoke();
             Hide();
             return;
         }
