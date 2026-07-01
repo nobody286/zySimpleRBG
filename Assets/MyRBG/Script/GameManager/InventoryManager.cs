@@ -25,6 +25,8 @@ public class InventoryManager : MonoBehaviour
     {
         itemList.Add(item);
         InventoryUI.Instance.AddItem(item);
+
+        MessageUI.Instance.Show("你获得了一个:" + item.name);
     }
     public void RemoveItem(ItemScriptObject itemSO)
     {
