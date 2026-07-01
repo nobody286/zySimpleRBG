@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UIElements;
 
 public class EnemyMove : MonoBehaviour
@@ -36,6 +36,20 @@ public class EnemyMove : MonoBehaviour
     [Tooltip("生成点相对于地面的竖直偏移，防止穿地")]
     public float spawnHeightOffset = 0.5f;
 
+    [Header("玩家检测设置")]
+    [Tooltip("检测玩家的半径，当玩家进入该半径时开始追踪")]
+    public float detectRadius = 5f;
+    [Tooltip("玩家超出该半径时放弃追踪（带滞回，避免频繁切换）")]
+    public float loseTargetRadius = 7f;
+
+    [Header("追击停下设置")]
+    [Tooltip("靠近玩家到该距离时停下（例如近战范围）")]
+    public float stopDistance = 1.5f;
+    [Tooltip("从停下状态恢复追击需要超过此距离（必须 > stopDistance）")]
+    public float resumeChaseDistance = 2.5f;
+
+    private Transform playerTransform;
+
     void Start()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
@@ -46,9 +60,93 @@ public class EnemyMove : MonoBehaviour
         {
             defaultAngularSpeed = enemyAgent.angularSpeed;
         }
+
+        var playerGO = GameObject.FindGameObjectWithTag(TagManager.PLAYER);
+        if (playerGO != null)
+            playerTransform = playerGO.transform;
     }
     void Update()
     {
+        // 先检测玩家是否在探测范围内（优先于巡逻逻辑）
+        if (playerTransform != null)
+        {
+            float distToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+
+            if (state != EnemyState.FightState && distToPlayer <= detectRadius)
+            {
+                // 进入追击状态
+                state = EnemyState.FightState;
+                // 进入追击时让 agent 开始移动并加快转向
+                if (enemyAgent != null)
+                {
+                    enemyAgent.angularSpeed = moveAngularSpeed;
+                    enemyAgent.isStopped = false;
+                    enemyAgent.SetDestination(playerTransform.position);
+                }
+                animator.SetBool("isWalking", true);
+            }
+            else if (state == EnemyState.FightState)
+            {
+                // 仍在追击中
+                if (distToPlayer > loseTargetRadius)
+                {
+                    // 失去目标，回到巡逻（恢复为 NormalState）
+                    state = EnemyState.NormalState;
+                    childState = EnemyState.RestingState;
+                    restTimer = 0;
+
+                    if (enemyAgent != null)
+                    {
+                        enemyAgent.angularSpeed = defaultAngularSpeed;
+                        enemyAgent.isStopped = false;
+                    }
+                    animator.SetBool("isWalking", false);
+                }
+                else
+                {
+                    // 当在追击状态内，处理靠近停下与恢复追击的界定范围（带滞回）
+                    if (distToPlayer <= stopDistance)
+                    {
+                        // 到达停下距离，停止移动但保持朝向（NavMeshAgent 停止）
+                        if (enemyAgent != null)
+                        {
+                            enemyAgent.isStopped = true;
+                        }
+                        animator.SetBool("isWalking", false);
+                    }
+                    else if (distToPlayer >= resumeChaseDistance)
+                    {
+                        // 超出恢复距离，继续追击
+                        if (enemyAgent != null)
+                        {
+                            enemyAgent.isStopped = false;
+                            if (!enemyAgent.pathPending)
+                                enemyAgent.SetDestination(playerTransform.position);
+                        }
+                        animator.SetBool("isWalking", true);
+                    }
+                    else
+                    {
+                        // 在 stopDistance 与 resumeChaseDistance 之间，保持当前状态（避免抖动）
+                        if (enemyAgent != null && !enemyAgent.isStopped)
+                        {
+                            // 仍保持追踪目标位置
+                            if (!enemyAgent.pathPending)
+                                enemyAgent.SetDestination(playerTransform.position);
+                            animator.SetBool("isWalking", true);
+                        }
+                        else
+                        {
+                            animator.SetBool("isWalking", false);
+                        }
+                    }
+                }
+                // 跳过默认巡逻逻辑当处于追击状态
+                return;
+            }
+        }
+
+        // 巡逻逻辑（仅在 NormalState 下执行）
         if (state == EnemyState.NormalState)
         {
             if (childState == EnemyState.RestingState)
@@ -58,11 +156,11 @@ public class EnemyMove : MonoBehaviour
                 if (restTimer > restTime)
                 {
                     Vector3 randomPosition = FindRandomPosition();
-                    enemyAgent.SetDestination(randomPosition);
-
-                    // 切换到移动状态时提高角速度，让转身更快
                     if (enemyAgent != null)
                     {
+                        enemyAgent.SetDestination(randomPosition);
+
+                        // 切换到移动状态时提高角速度，让转身更快
                         enemyAgent.angularSpeed = moveAngularSpeed;
                     }
 
@@ -73,13 +171,10 @@ public class EnemyMove : MonoBehaviour
             else if (childState == EnemyState.MovingState)
             {
                 // 使用 remainingDistance 与 stoppingDistance 判断是否到达目的地
-                if (!enemyAgent.pathPending && enemyAgent.remainingDistance <= enemyAgent.stoppingDistance)
+                if (enemyAgent != null && !enemyAgent.pathPending && enemyAgent.remainingDistance <= enemyAgent.stoppingDistance)
                 {
                     // 到达后恢复原先角速度
-                    if (enemyAgent != null)
-                    {
-                        enemyAgent.angularSpeed = defaultAngularSpeed;
-                    }
+                    enemyAgent.angularSpeed = defaultAngularSpeed;
 
                     restTimer = 0;
                     animator.SetBool("isWalking", false);
@@ -143,20 +238,20 @@ public class EnemyMove : MonoBehaviour
             po.itemSO = item;
 
             Collider collider = go.GetComponent<Collider>();
-            if(collider != null)
+            if (collider != null)
             {
                 collider.enabled = true;
                 collider.isTrigger = false;
             }
             Rigidbody rgd = go.GetComponent<Rigidbody>();
-            if(rgd != null)
+            if (rgd != null)
             {
                 rgd.isKinematic = false;
                 rgd.useGravity = true;
             }
         }
     }
-    
+
     void OnFootstep()
     {
 

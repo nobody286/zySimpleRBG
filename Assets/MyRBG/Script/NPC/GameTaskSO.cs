@@ -18,7 +18,7 @@ public class GameTaskSO :ScriptableObject
     public ItemScriptObject startReward;
     public ItemScriptObject endReward;
 
-    public int enemyCountNeed = 10;
+    public int enemyCountNeed = 3;
 
     public int currentEnemyCount = 0;
     public void Start()
