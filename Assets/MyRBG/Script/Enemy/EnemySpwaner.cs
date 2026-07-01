@@ -11,6 +11,7 @@ public class EnemySpwaner : MonoBehaviour
     void Start()
     {
         SpwanEnemy();
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
